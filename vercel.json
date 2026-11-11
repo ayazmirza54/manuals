@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/aws", "destination": "https://awsmanual.vercel.app", "permanent": false },
+    { "source": "/aws/:path*", "destination": "https://awsmanual.vercel.app/:path*", "permanent": false },
+    { "source": "/linux", "destination": "https://linuxmanual.vercel.app", "permanent": false },
+    { "source": "/linux/:path*", "destination": "https://linuxmanual.vercel.app/:path*", "permanent": false },
+    { "source": "/sql", "destination": "https://sqlmanual.vercel.app", "permanent": false },
+    { "source": "/sql/:path*", "destination": "https://sqlmanual.vercel.app/:path*", "permanent": false }
+  ]
+}

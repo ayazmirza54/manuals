@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manuals</title>
+  <meta name="description" content="One stop shop for the AWS, Linux and SQL manuals.">
+  <style>
+    :root {
+      --bg: #f7f7f5; --surface: #ffffff; --text: #1a1a1a; --muted: #5f5f5f;
+      --border: #e3e3df; --accent: #2f6fed; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111214; --surface: #1a1b1e; --text: #ececec; --muted: #a0a0a0;
+        --border: #2a2b2f; --accent: #6b9bff; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+      background: var(--bg); color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { flex: 1; width: 100%; max-width: 960px; margin: 0 auto; padding: 72px 16px 48px; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); letter-spacing: -0.02em; margin: 0 0 8px; }
+    .lead { color: var(--muted); font-size: 1.125rem; margin: 0 0 48px; max-width: 560px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    a.card {
+      display: flex; flex-direction: column; gap: 12px; padding: 24px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+      color: inherit; text-decoration: none; box-shadow: var(--shadow);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    a.card:hover, a.card:focus-visible { transform: translateY(-2px); border-color: var(--accent); outline: none; }
+    .icon {
+      width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center;
+      font-weight: 700; font-size: .9rem; color: #fff;
+    }
+    .aws .icon { background: #e8891c; }
+    .linux .icon { background: #2b2b2b; }
+    .sql .icon { background: #2f6fed; }
+    .card h2 { margin: 0; font-size: 1.25rem; }
+    .card p { margin: 0; color: var(--muted); flex: 1; }
+    .go { color: var(--accent); font-weight: 600; font-size: .95rem; }
+    .path { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .8rem; color: var(--muted); }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 24px 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Manuals</h1>
+    <p class="lead">One stop shop for every manual. Pick one to jump straight in.</p>
+    <div class="grid">
+      <a class="card aws" href="/aws">
+        <div class="icon">AWS</div>
+        <h2>AWS Manual</h2>
+        <p>Cloud services, IAM, networking and deployment on Amazon Web Services.</p>
+        <span class="path">manuals.vercel.app/aws</span>
+        <span class="go">Open manual →</span>
+      </a>
+      <a class="card linux" href="/linux">
+        <div class="icon">$_</div>
+        <h2>Linux Manual</h2>
+        <p>Shell commands, file system, processes, permissions and system admin.</p>
+        <span class="path">manuals.vercel.app/linux</span>
+        <span class="go">Open manual →</span>
+      </a>
+      <a class="card sql" href="/sql">
+        <div class="icon">SQL</div>
+        <h2>SQL Manual</h2>
+        <p>Queries, joins, aggregations, indexes and database design.</p>
+        <span class="path">manuals.vercel.app/sql</span>
+        <span class="go">Open manual →</span>
+      </a>
+    </div>
+  </main>
+  <footer>Manuals · AWS · Linux · SQL</footer>
+</body>
+</html>
