@@ -19,3 +19,11 @@ The landing page lives in `public/index.html`; routing is handled by the
 
 To add another manual, add a card to `public/index.html` and a pair of
 redirects to `vercel.json`.
+
+## Theme
+
+Dark, terminal-style look modelled on [devvm.dev](https://devvm.dev): black
+background, lime `#7fff00` accent, teal `#20474b` borders, pixel-mono headings.
+Headings use [Departure Mono](https://departuremono.com/) (SIL OFL 1.1,
+self-hosted in `public/fonts/` with its licence); body text uses Instrument
+Sans and Martian Mono from Google Fonts.
