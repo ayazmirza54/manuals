@@ -2,7 +2,7 @@
 
 ![Manuals gateway page](docs/preview.png)
 
-Gateway / router layer for the three manuals, deployed at **https://manuals.vercel.app**.
+Gateway / router layer for the three manuals, deployed at **https://openmanuals.vercel.app**.
 
 | Route | Redirects to |
 | --- | --- |
@@ -17,7 +17,7 @@ The landing page lives in `public/index.html`; routing is handled by the
 ## Deploy
 
 1. Import this repo in Vercel (Framework preset: **Other**, no build command).
-2. Name the project `manuals` so it is served at `manuals.vercel.app`.
+2. The project is served at `openmanuals.vercel.app`.
 
 To add another manual, add a card to `public/index.html` and a pair of
 redirects to `vercel.json`.
@@ -29,3 +29,15 @@ background, lime `#7fff00` accent, teal `#20474b` borders, pixel-mono headings.
 Headings use [Departure Mono](https://departuremono.com/) (SIL OFL 1.1,
 self-hosted in `public/fonts/` with its licence); body text uses Instrument
 Sans and Martian Mono from Google Fonts.
+
+## Open Graph images
+
+1200×630 social cards for all four sites live in `public/og/` and are served
+from the gateway:
+
+| Site | Image |
+| --- | --- |
+| Gateway | https://openmanuals.vercel.app/og/gateway.png |
+| AWS | https://openmanuals.vercel.app/og/aws.png |
+| Linux | https://openmanuals.vercel.app/og/linux.png |
+| SQL | https://openmanuals.vercel.app/og/sql.png |
