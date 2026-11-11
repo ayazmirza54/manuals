@@ -1,5 +1,7 @@
 # Manuals
 
+![Manuals gateway page](docs/preview.png)
+
 Gateway / router layer for the three manuals, deployed at **https://manuals.vercel.app**.
 
 | Route | Redirects to |
